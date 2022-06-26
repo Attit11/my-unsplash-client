@@ -5,7 +5,7 @@ import { SearchOutlined } from "@ant-design/icons";
 
 import "./navigationBar.css";
 
-function NavigationBar({showAddPhotoModal}) {
+function NavigationBar({ showAddPhotoModal }) {
   return (
     <>
       <nav>
@@ -13,13 +13,19 @@ function NavigationBar({showAddPhotoModal}) {
           <div className="image-and-searchbar">
             <img src={logo} alt="" />
             <Input
-            className="search-bar"
+              className="search-bar"
               size="large"
               placeholder="Search By the name"
               prefix={<SearchOutlined />}
             />
           </div>
-          <Button className="add-button" onClick={showAddPhotoModal} type="primary">Add a photo</Button>
+          <Button
+            className="add-button"
+            onClick={showAddPhotoModal}
+            type="primary"
+          >
+            Add a photo
+          </Button>
         </div>
       </nav>
     </>
